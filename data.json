@@ -15,6 +15,74 @@
       {
         "name": "The Wise but Stupid Potion",
         "description":  "Your WIS increases by 1d4, and INT decreases by 1d4 for 2d12 hours."
+      },
+      {
+        "name": "The Flying Potion",
+        "description":  "Grow feathers for 1d8 hours."
+      },
+      {
+        "name": "The Overwhelming Potence Potion",
+        "description":  "An erection lasting more than 4 hours"
+      },
+      {
+        "name": "The Classic Love Potion",
+        "description":  "A Classic love Potion"
+      },
+      {
+        "name": "The Powerful Growth Potion",
+        "description":  "A Potion that if poured on the ground will grow an acre of trees overnight. If drank..... Well that's unfortunate."
+      },
+      {
+        "name": "The Hideous Potion",
+        "description":  "Grows a hideous feature that lasts 1d8 hours (like mandibles)."
+      },
+      {
+        "name": "The Beautiful Ginger Potion",
+        "description":  "You grow a beautiful ginger beard down to your knees."
+      },
+      {
+        "name": "The Drooling Potion",
+        "description":  "You drool uncontrollably for 1d4 hours."
+      },
+      {
+        "name": "The Glowing Finger Potion",
+        "description":  "The index finger on your dominant hand start to glow shed bright light in a 20-foot radius and dim light for an additional 20 feet for the next 1d8 hours."
+      },
+      {
+        "name": "The Amnesia Potion",
+        "description":  "You forget everything that's happened over the last 2 days."
+      },
+      {
+        "name": "The Kali Potion",
+        "description":  "Two extra arms sprout from your sides and function as normal for 10 minutes. You can use these arms to take a bonus action during combat. After 10 minutes the arms suddenly fall away, lifeless."
+      },
+      {
+        "name": "The Refreshing Potion",
+        "description":  "The potion is a water elemental. Drinking it tastes like the freshest water you've ever drank. As soon as you take part in vigorous activity you spawn a water elemental in the same square as you."
+      },
+      {
+        "name": "The Coke Potion",
+        "description":  "The potion is Coca-Cola. Describe the sugary taste and fizz, but don't use the brand name. See if the player figures it out."
+      },
+      {
+        "name": "The 100% Efficiency Potion",
+        "description":  "The potion is clear, with glitter floating in it. Drinking it gives you minty fresh breath, and you don't need to fart or go to the toilet for 48 hours as your body becomes 100% efficient."
+      },
+      {
+        "name": "The 'Please Dont't Drink Me' Potion",
+        "description":  "The thick yellow potion twists and moves of its own accord. The fluid inside will actively try to avoid being drunk, clinging to the inside of the bottle. It's actually a Tiny Ochre Jelly."
+      },
+      {
+        "name": "The Mood Broadcast Potion",
+        "description":  "The potion is blood-red with fleshy chunks in it, as through a brain has been put through a blender. Drinking it telegraphs the player's mood and thoughts to all characters within 30ft for one hour, as if under the Detect Thoughts spell."
+      },
+      {
+        "name": "The Levitation Potion",
+        "description":  "You hover 4 inches above the ground for 1d6 hours."
+      },
+      {
+        "name": "The 'Please Dont't Pierce Me' Potion",
+        "description":  "You gain a mild fear of arrows."
       }
     ]
   }
