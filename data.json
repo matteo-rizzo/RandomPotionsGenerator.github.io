@@ -1,0 +1,14 @@
+{
+    "potions": [
+      {
+        "name": "Polyglot potion",
+        "description": "You can speak 3 additional languages, chosen by the DM, for 1d10 days."
+      },
+      {
+        "name": "Changeling potion",
+        "description":  "Roll on the polymorph table."
+      }
+    ]
+  }
+  
+  
