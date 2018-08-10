@@ -55,7 +55,11 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0">Random Potions Generator</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">A simple free random potions generator to spice up your DnD campaign</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Generate a random potion</a>
+          <button  onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a random potion</button>
+          <div id="potion">
+            <h3 id="potion-name"></h3>
+            <p id="potion-description"></p>
+          </div>
         </div>
       </div>
     </header>
@@ -166,6 +170,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/index.js"></script>
+    <script src="js/generatePotion.js"></script>
 
   </body>
 

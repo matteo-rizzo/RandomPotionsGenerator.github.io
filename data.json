@@ -1,12 +1,20 @@
 {
     "potions": [
       {
-        "name": "Polyglot potion",
+        "name": "The Polyglot Potion",
         "description": "You can speak 3 additional languages, chosen by the DM, for 1d10 days."
       },
       {
-        "name": "Changeling potion",
+        "name": "The Changeling Potion",
         "description":  "Roll on the polymorph table."
+      },
+      {
+        "name": "The Kangaroo Potion",
+        "description":  "You can jump four times as high for 24 hours, also all fall damage you take is divided by four for the duration."
+      },
+      {
+        "name": "The Wise but Stupid Potion",
+        "description":  "Your WIS increases by 1d4, and INT decreases by 1d4 for 2d12 hours."
       }
     ]
   }
