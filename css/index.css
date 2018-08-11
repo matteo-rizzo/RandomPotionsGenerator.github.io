@@ -133,7 +133,7 @@
 
 .about-section {
   color: black;
-  padding: 7em;
+  padding: 5em 1em;
 }
 
 .contact-section {
@@ -198,7 +198,7 @@ footer {
   min-height: 33vh;
 }
 
-/* Potion generator animation */
+/* Potion header animation */
 
 .c-potion {
   position: relative;
@@ -414,15 +414,21 @@ animation: bubble 3s linear infinite;
 }
 }
 
-/* Potion header animation */
+/* Potion generator animation */
 
 .box {
   position: relative;
   background: none;
-  width: 33%;
-  height: 15em;
+  width: 30%;
+  height: 7em;
   display: block;
   margin: auto;
+}
+
+@media (min-width: 992px) {
+  .box {
+    height: 15em;
+  }
 }
 
 .potion-container {
@@ -461,6 +467,14 @@ animation: bubble 3s linear infinite;
   background: #9a501d;
 }
 
+.box:nth-child(2) .fill {
+  animation: slime 4s ease-in-out infinite;
+}
+
+.box:nth-child(3) .fill {
+  animation: slime 5s ease-in-out infinite;
+}
+
 .fill {
   position: absolute;
   height: 90%;
@@ -471,7 +485,7 @@ animation: bubble 3s linear infinite;
   left: 10%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  animation: slime 3s ease-in infinite;
+  animation: slime 3s ease-in-out infinite;
   z-index: 1;
 }
 
