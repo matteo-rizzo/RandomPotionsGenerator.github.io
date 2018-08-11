@@ -6,6 +6,7 @@
 #mainNav {
   min-height: 56px;
   background-color: #fff;
+  text-align: center;
 }
 
 #mainNav .navbar-toggler {
@@ -22,7 +23,8 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .5em;
+  margin: 0em;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -45,7 +47,6 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
@@ -88,7 +89,8 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding-top: 10em;
+  padding-bottom: 10em;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -98,8 +100,7 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
-    padding: 0;
+    min-height: 100vh;
   }
 }
 
@@ -131,43 +132,8 @@
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-}
-
-.about-section p {
-  margin-bottom: 5rem;
-}
-
-.projects-section {
-  padding: 10rem 0;
-}
-
-.projects-section .featured-text {
-  padding: 2rem;
-}
-
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
-  }
-}
-
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: .25rem;
-    width: 30%;
-  }
+  color: black;
+  padding: 7em;
 }
 
 .contact-section {
@@ -232,7 +198,7 @@ footer {
   min-height: 33vh;
 }
 
-/* Potion */
+/* Potion generator animation */
 
 .c-potion {
   position: relative;
@@ -249,6 +215,7 @@ footer {
 .c-potion__inner {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 1;
 }
 .c-potion__shade {
@@ -322,5 +289,301 @@ footer {
     left: 50%;
     transform: scale(5);
     opacity: 0;
+  }
+}
+
+/* Potion about animation */
+
+.containing {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(15deg);
+}
+
+.liquid {
+  background: linear-gradient(to right, #01c2ea 50%, #00b5da 50%);
+  box-shadow: 0px 0px 0px 3px rgb(232, 253, 30);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 2em;
+  left: 0px;
+}
+
+.flask {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid #ffbecc;
+  background: #ffbecc;
+  position: relative;
+  transform: rotate(-15deg) scale(0.7);
+  transition: all ease 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.flask:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 10px;
+  height: 30px;
+  background: #ffbecc;
+  border: 10px solid #ffbecc;
+  left: 1.5em;
+  top: -2em;
+}
+
+.flask:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 12px;
+  background: #ffbecc;
+  left: .5em;
+  top: -2em;
+  border-radius: 5px;
+}
+
+.flask:nth-child(2) .liquid {
+  background: linear-gradient(to right, #ff4538 50%, #f93b2e 50%);
+  box-shadow: 0px 0px 0px 3px rgb(255, 120, 111);
+}
+.flask:nth-child(3) .liquid {
+  background: linear-gradient(to right, #29bcff 50%, #03A9F4 50%);
+  box-shadow: 0px 0px 0px 3px rgb(93, 205, 255);
+}
+
+.bubbles {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+animation: bubble 3s linear infinite;
+}
+
+@keyframes bubble {
+0% {
+    box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                25px 45px 0px -10px rgba(255,255,255,0.5),
+                43px -5px 0px -10px rgba(255,255,255,0.5),
+                58px 55px 0px -10px rgba(255,255,255,0.5),
+                78px 35px 0px -10px rgba(255,255,255,0.5);
+}
+1% {
+    box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                25px 45px 0px -10px rgba(255,255,255,0.5),
+                43px 55px 0px -10px rgba(255,255,255,0.5),
+                58px 55px 0px -10px rgba(255,255,255,0.5),
+                78px 35px 0px -10px rgba(255,255,255,0.5);
+}
+25% {
+    box-shadow: 10px 15px 0px 0px rgba(255,255,255,0.5),
+                25px 45px 0px -10px rgba(255,255,255,0.5),
+                43px 25px 0px 0px rgba(255,255,255,0.5),
+                58px 55px 0px -10px rgba(255,255,255,0.5),
+                78px 35px 0px -10px rgba(255,255,255,0.5);
+}
+50% {
+    box-shadow: 10px -5px 0px -10px rgba(255,255,255,0.5),
+                25px 45px 0px -10px rgba(255,255,255,0.5),
+                43px 5px 0px -10px rgba(255,255,255,0.5),
+                58px 25px 0px 0px rgba(255,255,255,0.5),
+                78px 35px 0px -10px rgba(255,255,255,0.5);
+}
+75% {
+    box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                25px 25px 0px 0px rgba(255,255,255,0.5),
+                43px 45px 0px -10px rgba(255,255,255,0.5),
+                58px 0px 0px -10px rgba(255,255,255,0.5),
+                78px 10px 0px 0px rgba(255,255,255,0.5);
+}
+100% {
+    box-shadow: 10px 35px 0px -10px rgba(255,255,255,0.5),
+                25px -5px 0px -10px rgba(255,255,255,0.5),
+                43px 25px 0px 0px rgba(255,255,255,0.5),
+                58px 55px 0px -10px rgba(255,255,255,0.5),
+                78px -5px 0px -10px rgba(255,255,255,0.5);
+}
+}
+
+/* Potion header animation */
+
+.box {
+  position: relative;
+  background: none;
+  width: 33%;
+  height: 15em;
+  display: block;
+  margin: auto;
+}
+
+.potion-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.glass {
+  position: absolute;
+  height: 80%;
+  width: 20%;
+  background: #b5f0e8;
+  opacity: 0.7;
+  top: 20%;
+  left: 40%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 2;
+}
+
+.cap-left {
+  position: absolute;
+  width: 50%;
+  height: 15%;
+  top: -15%;
+  background: #b9661c;
+}
+.cap-right {
+  position: absolute;
+  width: 50%;
+  height: 15%;
+  top: -15%;
+  right: 0%;
+  background: #9a501d;
+}
+
+.fill {
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  background: #da0000;
+  opacity: 0.8;
+  bottom: 5%;
+  left: 10%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  animation: slime 3s ease-in infinite;
+  z-index: 1;
+}
+
+.bubble-1 {
+  position: absolute;
+  height: 10%;
+  width: 35%;
+  top: 10%;
+  left: 15%;
+  border-radius: 50%;
+  background: #bf0303;
+}
+
+.bubble-2 {
+  position: absolute;
+  height: 8%;
+  width: 33%;
+  top: 25%;
+  right: 15%;
+  border-radius: 50%;
+  background: #bf0303;
+}
+
+.bubble-3 {
+  position: absolute;
+  height: 10%;
+  width: 35%;
+  top: 40%;
+  left: 15%;
+  border-radius: 50%;
+  background: #bf0303;
+}
+
+.bubble-4 {
+  position: absolute;
+  height: 8%;
+  width: 33%;
+  top: 55%;
+  right: 15%;
+  border-radius: 50%;
+  background: #bf0303;
+}
+
+.bubble-5 {
+  position: absolute;
+  height: 8%;
+  width: 33%;
+  top: 75%;
+  left: 15%;
+  border-radius: 50%;
+  background: #bf0303;
+}
+
+@keyframes slime {
+  0% {
+    height: 0%;
+  }
+  10% {
+    height: 10%;
+  }
+  15% {
+    height: 15%;
+  }
+  20% {
+    height: 20%;
+  }
+  25% {
+    height: 25%;
+  }
+  30% {
+    height: 30%;
+  }
+  35% {
+    height: 35%;
+  }
+  40% {
+    height: 40%;
+  }
+  45% {
+    height: 45%;
+  }
+  50% {
+    height: 50%;
+  }
+  55% {
+    height: 55%;
+  }
+  60% {
+    height: 60%;
+  }
+  65% {
+    height: 65%;
+  }
+  70% {
+    height: 70%;
+  }
+  75% {
+    height: 75%;
+  }
+  80% {
+    height: 80%;
+  }
+  85% {
+    height: 85%;
+  }
+  90% {
+    height: 90%;
+  }
+  95% {
+    height: 92%;
+  }
+  100% {
+    height: 93%;
   }
 }
