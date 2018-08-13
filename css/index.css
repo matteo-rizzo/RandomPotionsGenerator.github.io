@@ -94,7 +94,6 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-color: #64a19d;
 }
 
 @media (min-width: 992px) {
@@ -104,7 +103,7 @@
 }
 
 .btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 5px 10px 18px #c571f5b6;
   padding: 1.25rem 2rem;
   font-family: 'Varela Round';
   font-size: 80%;
@@ -114,29 +113,27 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  transition: all .5s ease-in-out;
+  background-image: linear-gradient(to top right, #c471f5 0%, #fa71cd 100%);
+  color: white !important;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  transition: all .5s ease-in-out;
+  background-image: linear-gradient(to bottom right, #c471f5 0%, #fa71cd 100%);
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
-  color: white;
+  transition: all .5s ease-in-out;
+  background-image: linear-gradient(to bottom right, #c471f5 0%, #fa71cd 100%);
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
-}
-
-.about-section {
-  color: black;
-  padding: 5em 1em;
+  background-color: #c571f5b6 !important;
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  color: black !important;
 }
 
 .contact-section .social {
@@ -188,6 +185,7 @@ a:focus, a:hover {
 }
 
 footer {
+  background-image: linear-gradient(to top right, #c471f5 0%, #fa71cd 100%);
   padding: 5rem 0;
 }
 
@@ -195,6 +193,12 @@ footer {
 
 #generator {
   min-height: 33vh;
+}
+
+@media (min-width: 992px) {
+  #generator .row {
+    flex-direction: row-reverse; 
+  }
 }
 
 /* Potion header animation */
@@ -425,6 +429,8 @@ animation: bubble 3s linear infinite;
 .box {
   position: relative;
   background: none;
+  height: 33vh;
+  width: 33vh;
   display: block;
   margin: auto;
 }
@@ -434,6 +440,12 @@ animation: bubble 3s linear infinite;
   width: 100%;
   height: 100%;
   background: none;
+}
+
+@media (min-width: 992px) {
+  .potion-container {
+    margin-top: 0em; 
+  }
 }
 
 .glass {

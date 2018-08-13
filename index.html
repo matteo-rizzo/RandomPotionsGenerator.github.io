@@ -80,32 +80,34 @@
     <!-- Generator Section -->
     <section id="generator">
         <div class="container h-100">
-          <div class="row align-items-center">
-              <div class="col-lg-6">        
-                  <div class="box">
-                      <div class="potion-container">
-                        <div class="glass">
-                          <div class="cap-left"></div>
-                          <div class="cap-right"></div>
-                          <div class="fill">
-                            <div class="bubble-1"></div>
-                            <div class="bubble-2"></div>
-                            <div class="bubble-3"></div>
-                            <div class="bubble-4"></div>
-                            <div class="bubble-5"></div>
-                            <div class="bubble-6"></div>
+          <div class="shadow-lg">
+              <div class="row mx-auto pt-5 pb-5  align-items-center">
+                  <div class="col-lg-6">
+                      <div class="mx-auto text-center p-5">
+                          <div id="potion" class="pb-5">
+                            <h3 id="potion-name"> The Tutorial Potion </h3>
+                            <p id="potion-description"> If you click the button, your random potion effect will appear right here. </p>
                           </div>
-                        </div>
+                          <a onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a new <br> random potion</a>
                       </div>
-                  </div>  
-              </div>
-              <div class="col-lg-6">
-                  <div class="mx-auto text-center">
-                      <div id="potion" class="p-5">
-                        <h3 id="potion-name"> The Tutorial Potion </h3>
-                        <p id="potion-description"> If you click the button, your random potion effect will appear right here. </p>
-                      </div>
-                      <a onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a new <br> random potion</a>
+                  </div>
+                  <div class="col-lg-6">        
+                      <div class="box">
+                          <div class="potion-container">
+                            <div class="glass">
+                              <div class="cap-left"></div>
+                              <div class="cap-right"></div>
+                              <div class="fill">
+                                <div class="bubble-1"></div>
+                                <div class="bubble-2"></div>
+                                <div class="bubble-3"></div>
+                                <div class="bubble-4"></div>
+                                <div class="bubble-5"></div>
+                                <div class="bubble-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>  
                   </div>
               </div>
           </div>
@@ -113,63 +115,65 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="pt-5">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">About the generator</h2>
-            <p class="text-white-50">The project is open source and
-              <a href="http://startbootstrap.com/template-overviews/grayscale/"> available on Github </a>. 
-            </p>
-            <p>The potions here proposed by the generator come from Reddit threads or are original. If you wrote the effet of one or more of the potions, no stealing is intend, I'm just sharing stupid ideas (anyway, if you want attribution just contact me and I'll be happy to mention the author) </p>
+        <div class="shadow-lg">
+            <div class="row p-4 text-center">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">About the generator</h2>
+                <p class="text-white-50">The project is open source and
+                  <a href="http://startbootstrap.com/template-overviews/grayscale/"> available on Github </a>. 
+                </p>
+                <p>The potions here proposed by the generator come from Reddit threads or are original. If you wrote the effet of one or more of the potions, no stealing is intend, I'm just sharing stupid ideas (anyway, if you want attribution just contact me and I'll be happy to mention the author) </p>
+              </div>
+            </div>
+            <div class="mx-auto d-flex justify-content-center pb-5 mt-5">
+              <div class="flask">
+                <div class="containing">
+                  <div class="liquid">
+                    <div class="bubbles"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flask">
+                <div class="containing">
+                  <div class="liquid">
+                    <div class="bubbles"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flask">
+                <div class="containing">
+                  <div class="liquid">
+                    <div class="bubbles"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mx-auto d-flex justify-content-center m-5 p-5">
-          <div class="flask">
-            <div class="containing">
-              <div class="liquid">
-                <div class="bubbles"></div>
-              </div>
-            </div>
-          </div>
-          <div class="flask">
-            <div class="containing">
-              <div class="liquid">
-                <div class="bubbles"></div>
-              </div>
-            </div>
-          </div>
-          <div class="flask">
-            <div class="containing">
-              <div class="liquid">
-                <div class="bubbles"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section bg-black">
+    <section id="contact" class="contact-section pt-5 pb-5">
 
       <div class="container text-center">
 
-        <div class="mx-auto">
-          <h2 class="text-white mb-4">Contact</h2>
+        <div class="mx-auto shadow-lg p-4">
+          <h2 class="col-lg-8 mx-auto text-white mb-4">Contact</h2>
           <p>I'm Matteo Rizzo, an handsome Computer Science student and D&D player. Feel free to contact me via Instagram, LinkedIn or Github.</p>    
-        </div>
         
-        <div class="social d-flex justify-content-center">
-          <a href="https://www.instagram.com/matte_rizzo/" class="mx-2">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/matteo-rizzo/" class="mx-2">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/MatteoRizzo96" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
+          <div class="social d-flex justify-content-center">
+            <a href="https://www.instagram.com/matte_rizzo/" class="mx-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/matteo-rizzo/" class="mx-2">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/MatteoRizzo96" class="mx-2">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
 
       </div>
