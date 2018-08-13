@@ -87,10 +87,9 @@
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
-  min-height: 35rem;
+  min-height: 100%;
   padding-top: 10em;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -100,7 +99,7 @@
 
 @media (min-width: 992px) {
   .masthead {
-    min-height: 100vh;
+    height: 100vh;
   }
 }
 
@@ -205,6 +204,13 @@ footer {
   color: #4e439b;
   transform: scale(1.5);
 }
+
+@media (min-width: 992px) {
+  .c-potion {
+    transform: scale(3);
+  }
+}
+
 .c-potion svg {
   fill: currentColor;
 }
@@ -419,16 +425,8 @@ animation: bubble 3s linear infinite;
 .box {
   position: relative;
   background: none;
-  width: 30%;
-  height: 7em;
   display: block;
   margin: auto;
-}
-
-@media (min-width: 992px) {
-  .box {
-    height: 15em;
-  }
 }
 
 .potion-container {
@@ -468,11 +466,11 @@ animation: bubble 3s linear infinite;
 }
 
 .box:nth-child(2) .fill {
-  animation: slime 4s ease-in-out infinite;
+  animation: slime 3s ease-out infinite;
 }
 
 .box:nth-child(3) .fill {
-  animation: slime 5s ease-in-out infinite;
+  animation: slime 3s ease-in-out infinite;
 }
 
 .fill {
@@ -485,7 +483,7 @@ animation: bubble 3s linear infinite;
   left: 10%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  animation: slime 3s ease-in-out infinite;
+  animation: slime 3s ease-in infinite;
   z-index: 1;
 }
 

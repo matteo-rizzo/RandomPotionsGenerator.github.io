@@ -51,26 +51,28 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
-        <div class="d-flex align-items-center">
-            <div class="mx-auto text-center">
-              <h1 class="my-0">Random Potions Generator</h1>
-              <h2 class="text-white-50 mt-2 mb-5">A random potions generator to spice up your D&D campaign*</h2>
-              <a href="#generator" onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a random potion</a>
-              <p class="p-5"> *Random and idiotic situations 100% guaranteed! </p>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6 d-flex align-items-center">
+                <div class="mx-auto text-center">
+                  <h1 class="my-0">Random Potions Generator</h1>
+                  <h2 class="text-white-50 mt-2 mb-5">A random potions generator to spice up your D&D campaign*</h2>
+                  <a href="#generator" onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a random potion</a>
+                  <p class="p-5"> *Random and idiotic situations 100% guaranteed! </p>
+                </div>
             </div>
-        </div>
-        <div class="mx-auto d-flex justify-content-center m-5">
-          <div id="potion-animation" class="c-potion"><svg class="c-potion__outer" xmlns="http://www.w3.org/2000/svg" width="110" height="106"><path class="c-potion__shade" d="M30.77 20.5c4.42-1.42 9.14-2.2 14.04-2.2 22.33 0 40.84 15.96 44.26 36.82 12.23 3.67 20.7 11.58 20.7 20.75 0 12.65-16.14 22.92-36.04 22.92-1.4 0-2.8-.06-4.17-.16-7.1 4.6-15.6 7.27-24.74 7.27C20.07 105.9 0 86.3 0 62.1c0-7.45 1.9-14.47 5.27-20.62-3.63-4.13-5.2-9.33-3.7-14.18 2.54-8.34 13.12-12.5 23.62-9.28 2 .62 3.9 1.46 5.57 2.5z"></path><path class="c-potion__bottle" d="M68.72 9.94h1.64c2.7 0 4.92-2.2 4.92-4.92 0-2.7-2.2-4.9-4.92-4.9H40.84C38.1.1 35.9 2.3 35.9 5s2.2 4.92 4.93 4.92h1.64v4.92c-10.86 0-19.7 8.82-19.7 19.66v50.8c0 1.8 1.48 3.27 3.3 3.27h59.06c1.8 0 3.28-1.48 3.28-3.3V34.53c0-10.84-8.82-19.66-19.68-19.66V9.94zm-27.9-3.28c-.9 0-1.63-.73-1.63-1.64 0-.9.72-1.63 1.63-1.63h29.53C71.26 3.4 72 4.1 72 5c0 .9-.73 1.64-1.64 1.64H40.83zm44.3 78.65H26.07V34.53c0-9.04 7.36-16.4 16.4-16.4h3.3V9.95h19.68v8.2h3.28c9.05 0 16.4 7.34 16.4 16.38v50.8z"></path></svg>
-            <svg
-                class="c-potion__inner" xmlns="http://www.w3.org/2000/svg" width="110" height="106">
-                <path class="c-potion__fill" d="M29 82V37.2s10.85-6.92 27.18 0C72.5 44.12 82 35.93 82 35.93V82H29z"></path>
-            </svg>
-            <div class="c-potion__bubble"></div>
-            <div class="c-potion__bubble"></div>
-            <div class="c-potion__bubble"></div>
-            <div class="c-potion__bubble"></div>
-          </div>    
+            <div class="col-lg-6 mx-auto d-flex justify-content-center m-5">
+              <div id="potion-animation" class="c-potion"><svg class="c-potion__outer" xmlns="http://www.w3.org/2000/svg" width="110" height="106"><path class="c-potion__shade" d="M30.77 20.5c4.42-1.42 9.14-2.2 14.04-2.2 22.33 0 40.84 15.96 44.26 36.82 12.23 3.67 20.7 11.58 20.7 20.75 0 12.65-16.14 22.92-36.04 22.92-1.4 0-2.8-.06-4.17-.16-7.1 4.6-15.6 7.27-24.74 7.27C20.07 105.9 0 86.3 0 62.1c0-7.45 1.9-14.47 5.27-20.62-3.63-4.13-5.2-9.33-3.7-14.18 2.54-8.34 13.12-12.5 23.62-9.28 2 .62 3.9 1.46 5.57 2.5z"></path><path class="c-potion__bottle" d="M68.72 9.94h1.64c2.7 0 4.92-2.2 4.92-4.92 0-2.7-2.2-4.9-4.92-4.9H40.84C38.1.1 35.9 2.3 35.9 5s2.2 4.92 4.93 4.92h1.64v4.92c-10.86 0-19.7 8.82-19.7 19.66v50.8c0 1.8 1.48 3.27 3.3 3.27h59.06c1.8 0 3.28-1.48 3.28-3.3V34.53c0-10.84-8.82-19.66-19.68-19.66V9.94zm-27.9-3.28c-.9 0-1.63-.73-1.63-1.64 0-.9.72-1.63 1.63-1.63h29.53C71.26 3.4 72 4.1 72 5c0 .9-.73 1.64-1.64 1.64H40.83zm44.3 78.65H26.07V34.53c0-9.04 7.36-16.4 16.4-16.4h3.3V9.95h19.68v8.2h3.28c9.05 0 16.4 7.34 16.4 16.38v50.8z"></path></svg>
+                <svg
+                    class="c-potion__inner" xmlns="http://www.w3.org/2000/svg" width="110" height="106">
+                    <path class="c-potion__fill" d="M29 82V37.2s10.85-6.92 27.18 0C72.5 44.12 82 35.93 82 35.93V82H29z"></path>
+                </svg>
+                <div class="c-potion__bubble"></div>
+                <div class="c-potion__bubble"></div>
+                <div class="c-potion__bubble"></div>
+                <div class="c-potion__bubble"></div>
+              </div>    
+            </div>
         </div>
       </div>
     </header>
@@ -78,62 +80,32 @@
     <!-- Generator Section -->
     <section id="generator">
         <div class="container h-100">
-          <div class="d-flex pt-5 pb-5">
-              <div class="mx-auto text-center">
-                  <div id="potion" class="p-5">
-                    <h3 id="potion-name"> The Tutorial Potion </h3>
-                    <p id="potion-description"> If you click the button, your random potion effect will appear right here. </p>
-                  </div>
-                  <a onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a new <br> random potion</a>
+          <div class="row align-items-center">
+              <div class="col-lg-6">        
+                  <div class="box">
+                      <div class="potion-container">
+                        <div class="glass">
+                          <div class="cap-left"></div>
+                          <div class="cap-right"></div>
+                          <div class="fill">
+                            <div class="bubble-1"></div>
+                            <div class="bubble-2"></div>
+                            <div class="bubble-3"></div>
+                            <div class="bubble-4"></div>
+                            <div class="bubble-5"></div>
+                            <div class="bubble-6"></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>  
               </div>
-          </div>
-          <div class="mx-auto pt-3 d-flex justify-content-center">        
-              <div class="box">
-                  <div class="potion-container">
-                    <div class="glass">
-                      <div class="cap-left"></div>
-                      <div class="cap-right"></div>
-                      <div class="fill">
-                        <div class="bubble-1"></div>
-                        <div class="bubble-2"></div>
-                        <div class="bubble-3"></div>
-                        <div class="bubble-4"></div>
-                        <div class="bubble-5"></div>
-                        <div class="bubble-6"></div>
+              <div class="col-lg-6">
+                  <div class="mx-auto text-center">
+                      <div id="potion" class="p-5">
+                        <h3 id="potion-name"> The Tutorial Potion </h3>
+                        <p id="potion-description"> If you click the button, your random potion effect will appear right here. </p>
                       </div>
-                    </div>
-                  </div>
-              </div>  
-              <div class="box">
-                  <div class="potion-container">
-                    <div class="glass">
-                      <div class="cap-left"></div>
-                      <div class="cap-right"></div>
-                      <div class="fill">
-                        <div class="bubble-1"></div>
-                        <div class="bubble-2"></div>
-                        <div class="bubble-3"></div>
-                        <div class="bubble-4"></div>
-                        <div class="bubble-5"></div>
-                        <div class="bubble-6"></div>
-                      </div>
-                    </div>
-                  </div>
-              </div>  
-              <div class="box">
-                  <div class="potion-container">
-                    <div class="glass">
-                      <div class="cap-left"></div>
-                      <div class="cap-right"></div>
-                      <div class="fill">
-                        <div class="bubble-1"></div>
-                        <div class="bubble-2"></div>
-                        <div class="bubble-3"></div>
-                        <div class="bubble-4"></div>
-                        <div class="bubble-5"></div>
-                        <div class="bubble-6"></div>
-                      </div>
-                    </div>
+                      <a onclick="generatePotion()" class="btn btn-primary js-scroll-trigger">Generate a new <br> random potion</a>
                   </div>
               </div>
           </div>
